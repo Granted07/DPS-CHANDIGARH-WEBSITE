@@ -13,28 +13,30 @@
 h1 {
     color: #ffff;
     font-family: Montserrat;
-    font-size: 125px;
+    font-size: 62.5px;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
 }
 
 h2 {
-    color: #FFF;
+    /* color: #FFF; */
     text-align: center;
     font-family: Montserrat;
-    font-size: 50px;
+    font-size: 25px;
     font-style: italic;
     font-weight: 600;
     line-height: normal;
 }
 
 p {
-    color: #fff;
+    color: #000;
     font-family: Montserrat;
     font-size: 30px;
     font-style: normal;
     line-height: normal;
+    justify-self: center;
+    margin: 20px;
     font-weight: 400;
 }
 
@@ -44,17 +46,15 @@ body {
     background-size: cover;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 video {
     position: absolute;
     margin-top: 0;
     min-width: 100vw;
-    min-height: 100vh;
     opacity: 0.2;
 }
-
-
 
 .top-nav-bar{
     background-color: #404040;
@@ -67,54 +67,36 @@ video {
     align-items: cen;
 }
 
-.header{
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin: 20px;
-}
-
 .column {
     background: linear-gradient(82deg, #FFF 0%, #FFBEBE 100%);
-    margin-left: auto;
-    height: 100vh;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: center;
-    align-items: left;
-    justify-self: right;
-    padding-left: 280px;
+    height: 700px;
+    padding: 1%;
+    margin: 2%;
+    border-radius: 30px;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
-.video-wrapper {
+.column{
+    opacity: 1;
+}
+
+.main {
     position: relative;
     overflow: hidden;
     height: 100vh;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
+    align-items: center;
+    overflow-y: auto;
+    flex-direction: column;
 }
 
-/* .home {
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    overflow: scroll;
-    align-items: flex-start;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-} */
-
 .button-extend {
-    width: 472px;
-    height: 145px;
+    width: 236px;
+    height: 72.5px;
     align-items: center;
     justify-content: center;
     border-radius: 69px;
@@ -123,26 +105,14 @@ video {
     align-items: center;
     justify-content: center;
     text-align: center;
-    transition: 1s ease-out 100ms;
+    transition: 0.5s ease-out 100ms;
+    color: white;
 }
 
 .button-extend:hover{
-    scale: 103%;
-    box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.60);
+    background: #fff;
+    color: black;
 }
 
-.main {
-    /* position: absolute; */
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
 
-/* .break {
-    flex-basis: 100%;
-    height: 0;
-} */
 
